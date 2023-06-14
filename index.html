@@ -1,15 +1,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./resources/logos/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="./resources/logos/logo.jpg" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>PradsOverseas</title>
     <meta name="description" content="PRadsOverseas offical website" />
     <meta name="author" content="Laxminarsimha Chukka" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="header.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- TODO: add Open Graph meta options on the Open Graph website(https://ogp.me/).-->
   </head>
   <body>
@@ -24,30 +28,31 @@
             />
             <span class="brand">PR<span class="brand-sub">ads</span></span>
           </div>
-          <span class="caption">Overseas Educational consultants</span>
+          <span class="caption">Overseas Educational consultants</span>
         </div>
         <nav>
           <ul class="menu-ul">
-            <li class="menu-item btn btn-pri-filled active-page">
-              <a href="#"> Home</a>
+            <li class="menu-item">
+              <a class="navbar-item material-icons  active-page" href="#">&#Xe88a</a>
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">Student Profile</a>
+            <li class="menu-item btn">
+              <a class="navbar-item material-icons" href="#">&#XE7FD</a>
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">Applications</a>
+            <li class="menu-item btn">
+              <a class="navbar-item material-icons" href="#">&#Xe84f</a>
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">Payment History</a>
+            <li class="menu-item btn">
+              <a class="navbar-item material-icons" href="#">&#Xea3e</a>
+              
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">Search</a>
+            <li class="menu-item btn">
+              <a class="navbar-item material-icons" href="#">&#Xf02f</a>
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">Contact Us</a>
+            <li class="menu-item btn">
+              <a class="navbar-item material-icons" href="#">&#Xe94c</a>
             </li>
-            <li class="menu-item btn btn-pri-unfilled">
-              <a href="#">About</a>
+            <li class="menu-item btn btn-pri-unfilled burgermenu" id="burgermenu">
+              <a class="navbar-item material-icons" href="#">&#Xe91a</a>
             </li>
           </ul>
         </nav>
@@ -59,60 +64,32 @@
               <label class="login-header-title">Log In</label>
               <div class="separator-line"></div>
             </div>
-            <!-- <div class="btn-row">
-              <div class="btn btn-border">
-                <div class="btn-logo"></div>
-                <div class="btn-text">Sign in with Google</div>
-              </div>
-            </div> -->
-            <!-- <div class=""btn-row> -->
-            <a class="social-button social-google-button link-button" href="#"
-              >Log In with Google</a
-            >
-            <!-- </div> -->
-            <a class="social-button social-facebook-button link-button" href="#"
-              >Log In with Facebook</a
-            >
-            <!-- <div class="btn-row">
-              <div class="btn btn-border">
-                <div class="btn-logo">f</div>
-                <div class="btn-text">Sign in with Facebook</div>
-              </div>
-            </div> -->
-            <!-- <div class="btn-row"> -->
+            <a class="social-button social-google-button btn-shadow" href="#">Log In with Google</a>
+            <a class="social-button social-facebook-button btn-shadow" href="#">Log In with Facebook</a>
             <span class="lbl-or">
               <strong class="lbl-or">Or</strong>
             </span>
-            <!-- </div> -->
-            <!-- <div class="btn-row"> -->
             <input
               type="text"
-              class="login"
+              class="login btn-shadow"
               id="username"
               name="email-id"
               placeholder="Enter your email"
             />
-            <!-- </div> -->
-            <!-- <div class="btn-row"> -->
             <input
               type="password"
-              class="login"
+              class="login btn-shadow"
               id="password"
               name="password"
               placeholder="Enter your password"
               autocomplete="current-password"
               required
             />
-            <!-- </div> -->
-            <input class="btn-primary" type="submit" value="Log In" />
-            <!-- <div class="btn-row">
-              <div class="btn btn-border signin">
-                <div class="btn-signin-text">Sign in via registered email</div>
-              </div>
-            </div> -->
+            <input id="login-submit" class="btn-primary login-submit btn-shadow" type="submit" value="Log In" />
           </div>
         </div>
       </body>
     </div>
+    <script rel="script" src="header.js"></script>
   </body>
 </html>
