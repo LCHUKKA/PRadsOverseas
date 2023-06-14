@@ -9,6 +9,7 @@
   --hover-color: rgb(204, 170, 67);
   --font-family-sans: "Open Sans", sans-serif;
 }
+
 * {
   background: #ffffff;
   border: 0;
@@ -16,6 +17,7 @@
   box-sizing: border-box;
   font-family: var(--font-family-sans);
 }
+
 html {
   scroll-behavior: smooth;
 }

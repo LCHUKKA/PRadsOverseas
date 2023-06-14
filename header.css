@@ -11,6 +11,14 @@
   --header-color: #323847;
 }
 
+.login-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+
 .btn-pri-filled {
   display: flex;
   flex-direction: row;
@@ -152,5 +160,5 @@ a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8em;
   color: var(--header-color);
-  text-shadow: 0 0 3px #d1d1d1, 0 0 5px #ababab;
+  text-shadow: 0 0 1px #d1d1d1, 0 0 5px #ababab;
  }
