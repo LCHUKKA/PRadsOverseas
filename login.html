@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>PradsOverseas</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="font" href="Karla-VariableFont_wght.ttf" />
+  </head>
+  <body>
+    <div id="login-card" class="login-card flex">
+      <div class="login-header">
+        <label class="login-header-title">Log In</label>
+        <div class="separator-line"></div>
+      </div>
+      <div class="btn-row">
+        <div class="btn-border">
+          <div class="btn-logo">G</div>
+          <div class="btn-text">Sign in with Google</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <div class="btn-border">
+          <div class="btn-logo">f</div>
+          <div class="btn-text">Sign in with Facebook</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <span class="lbl-or">
+          <strong class="lbl-or">Or</strong>
+        </span>
+      </div>
+      <div class="btn-row">
+        <input
+          type="text"
+          class="txt"
+          id="username"
+          name="email-id"
+          placeholder="example@site.com"
+        />
+      </div>
+      <div class="btn-row">
+        <input
+          type="password"
+          class="txt pwd"
+          id="password"
+          name="password"
+          placeholder="password"
+          autocomplete="current-password"
+          required
+        />
+      </div>
+      <div class="btn-row">
+        <div class="btn-border signin">
+          <div class="btn-text">Sign in via registered email</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
