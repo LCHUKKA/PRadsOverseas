@@ -37,6 +37,8 @@ body {
   height: 100%;
   /* background: var(--sixty-color); */
   background-color: transparent;
+  background-color: #004b75;
+
 }
 
 .login-header {
