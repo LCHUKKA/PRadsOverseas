@@ -9,6 +9,7 @@
   --hover-color: rgb(204, 170, 67);
   --font-family-sans: "Open Sans", sans-serif;
 }
+
 * {
   background: #ffffff;
   border: 0;
@@ -16,6 +17,7 @@
   box-sizing: border-box;
   font-family: var(--font-family-sans);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -36,11 +38,6 @@ body {
   /* background: var(--sixty-color); */
   background-color: transparent;
 }
-/* 
-@font-face {
-  font-family: "Karla";
-  src: url("./Karla-VariableFont_wght.ttf");
-} */
 
 .login-header {
   display: flex;
@@ -57,12 +54,11 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  /* font-family: "Karla-VariableFont_wght"; */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
-  background: var(--sixty-color);
+  background: transparent;
   color: var(--header-color);
   text-align: center;
 }
@@ -73,64 +69,8 @@ body {
   background: none;
   position: relative;
   width: 50%;
-  /* height: fit-content; */
   border-bottom: 1.7px solid var(--header-color);
 }
-
-/* .btn-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 60px;
-} */
-
-/* 
-.btn-border {
-  display: flex;
-  align-items: center;
-  /* justify-content: center; 
-  box-sizing: border-box;
-  /* position: relative; 
-  width: 80%;
-  height: 100%;
-  border: 0.8px solid var(--ten-color);
-  border-radius: 8px;
-  /* background: #8d7bbe; 
-  background: transparent;
-} */
-/* 
-.btn-border:hover {
-  cursor: pointer;
-  background-color: var(--hover-color);
-  --text-reg-color: var(--sixty-color);
-}
-
-.btn-logo {
-  display: inline;
-  margin: 9px;
-  width: 24px;
-  height: 24px;
-  background: url(./resources/google_logo.png) no-repeat;
-  /* border: 0.8px solid var(--ten-color); */
-/* color: var(--text-reg-color); 
-} */
-/* 
-.btn-text {
-  display: inline;
-  position: relative;
-  width: fit-content;
-  height: 23px;
-  font-family: var(--font-family-sans);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 23px;
-  color: var(--btn-text-color);
-  /* color: var(--text-reg-color); 
-  background-color: transparent;
-  text-align: right;
-} */
 
 .lbl-or {
   height: 30px;
@@ -146,12 +86,9 @@ input.login {
   /* background: var(--sixty-color); */
   text-align: left;
   border: 1px solid #c3c3c3;
-
   border-radius: 8px;
   background-color: transparent;
   padding: 5px 5px;
-  /* color: var(--text-reg-color); */
-  /* font-family: "Karla-VariableFont_wght"; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -166,18 +103,6 @@ input.login::placeholder {
 
 input.login::-toolkit-placeholder {
   color: #004b75;
-}
-
-.txt {
-  width: 80%;
-
-  /* border: 3px solid var(--ten-color); */
-}
-
-.txt:hover {
-  cursor: pointer;
-  background-color: var(--hover-color);
-  --text-reg-color: var(--sixty-color);
 }
 
 .signin {
@@ -232,15 +157,30 @@ input.login::-toolkit-placeholder {
   display: block;
   width: 100%;
   height: 50px;
-  background-color: var(--brand-accent-color) !important;
+  background: linear-gradient(
+    0turn,
+    #1c5499,
+    var(--brand-accent-color),
+    #064797,
+    #1964c0
+  );
   color: #fff !important;
   font-weight: 500;
   font-size: 16px;
   border-color: #004b75 #004b75 #00456a #00456a;
   border-bottom-width: 0.8px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 0 hsla(0, 0%, 100%, 0.1); */
   border-radius: 8px;
   width: 80%;
   text-align: center;
+}
+
+input.login-submit {
+  cursor: pointer;
+}
+
+.btn-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
 }
